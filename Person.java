@@ -1,9 +1,11 @@
+import java.util.Scanner;
 public class Person {
-   public static String adres;
-   public static int kod_pocztowy;
-    public static String imie;
-    public static String nazwisko;
-    public static int wiek;
+    private String imie;
+    private String nazwisko;
+    private int wiek;
+    private String adres;
+    private int kod_pocztowy;
+
 
     public Person(String imie, String nazwisko, int wiek, String adres, int kod_pocztowy) {
         this.imie = imie;
@@ -12,11 +14,23 @@ public class Person {
         this.adres = adres;
         this.kod_pocztowy = kod_pocztowy;
     }
+
+    public static void log() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Wprowadź dane:");
+        System.out.println("Wprowadź imie:");
+        String imie = scanner.next();
+        System.out.println("Wprowadź nazwisko:");
+        String nazwisko = scanner.next();
+        System.out.println("Wprowadź wiek:");
+        int wiek = scanner.nextInt();
+        System.out.println("Wprowadź adres:");
+        String adres = scanner.next();
+        System.out.println("Wprowadź kod pocztowy:");
+        int kod_pocztowy = scanner.nextInt();
+        new Person(imie,nazwisko,wiek,adres,kod_pocztowy);
+    }
 }
-/**
- *Konstruktor Persona do , którego odwołuje się klasa Main
 
 
- *@autorzy
- *Norbert Modzeleski, Dominik Krucha
- **/
+
