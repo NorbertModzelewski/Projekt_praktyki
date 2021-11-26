@@ -1,29 +1,10 @@
 import java.util.Scanner;
 
-public class Main extends Person{
-
-    public Main(String imie, String nazwisko, int wiek, String adres, int kod_pocztowy) {
-        super(imie, nazwisko, wiek, adres, kod_pocztowy);
-    }
+public class Main {
 
     public static void main(String[] args) {
-
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Wprowadź dane:");
-        System.out.println("Wprowadź imie:");
-        Person.imie =  scanner.next();
-        System.out.println("Wprowadź nazwisko:");
-        Person.nazwisko =  scanner.next();
-        System.out.println("Wprowadź wiek:");
-        Person.wiek =  scanner.nextInt();
-        System.out.println("Wprowadź adres:");
-        Person.adres =  scanner.next();
-        System.out.println("Wprowadź kod pocztowy:");
-        Person.kod_pocztowy =  scanner.nextInt();
-        Person obiekt = new Person(Person.imie, Person.nazwisko, Person.wiek, Person.adres, Person.kod_pocztowy);
-
+        Person.log();
         strona_glowna();
-
     }
 
     public static void strona_glowna(){
@@ -300,16 +281,12 @@ public class Main extends Person{
 
 
 /**
-*Funkcja psvm : Funkcja która wpisuje dane klienta.
-*Funkcja strona glowna : Umożliwia wybranienie kategorii w naszym sklepie.
+ *Funkcja strona glowna : Umożliwia wybranienie kategorii w naszym sklepie.
  *Funkcja promocje : Informuje klienta na jakie przedmioty i ile zniżki jest na promocji.
  *Funkcja sprzedaz : Umożliwia zakupu wybranego przedmiotu przez klienta przy odpowoedniej ilosci pieniedzy doładowaniu konta.
  *Funkcja black_friday : Informuje klienta o promocji tak zwanej w czarny piątek odbywającej się w dniu 26.11.2021 na większość
- przedmiotów w sklepie.
+  przedmiotów w sklepie.
  *Funkcja rekomendowane_produkty : Wyświetla polecane produkty klientom.
-
-
-
  * @autorzy
  *Norbert Modzeleski, Dominik Krucha
  **/
