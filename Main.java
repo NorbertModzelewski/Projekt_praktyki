@@ -1,14 +1,15 @@
 import java.util.Scanner;
-
 public class Main {
 
     public static void main(String[] args) {
-        Person.log();
+
+        Klienci.logowanie();
         strona_glowna();
     }
 
     public static void strona_glowna(){
         int opcje;
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Witamy w sklepie gamingowym");
         System.out.println("1. Promocje");
@@ -28,8 +29,8 @@ public class Main {
                 rekomendowane_produkty();
             case 5:
                 break;
+            }
         }
-    }
     public static void promocje(){
         System.out.println("Promocje do -70%");
         System.out.println("Promocje sprzetu komputerowego");
@@ -43,26 +44,26 @@ public class Main {
         System.out.println("Sprzedaż komputerów: opcja 1");
         System.out.println("Sprzedaż osprzetu komputerowego: opcja 2,3,4,5");
         System.out.println("Sprzedaż psc: opcja 6");
-        System.out.println("sprzedaż umeblowania gamingowego: opcja 7,8");
+        System.out.println("Produkty krzesła, przedaż umeblowania gamingowego: opcja 7,8");
         opcje = scanner.nextInt();
         switch(opcje){
             case 1:
-                System.out.println("komputery");
-                System.out.println("wybierz opcje 1,2 lub 3");
+                System.out.println("Komputery");
+                System.out.println("Wybierz komputer który chcesz kupić 1.Ultra Gaming 2.Ultra Gaming Master 3.Champion");
                 opcje = scanner.nextInt();
                 switch(opcje){
                     case 1:
-                        System.out.println("komp1");
-                        System.out.println("kupiles komp1");
+                        System.out.println("Ultra Gaming");
+                        System.out.println("Kupiłeś komputer Ultra Gaming.");
                         strona_glowna();
 
                     case 2:
-                        System.out.println("komp2");
-                        System.out.println("kupiles komp2");
+                        System.out.println("Ultra Gaming Master");
+                        System.out.println("Kupiłeś komputer Ultra Gaming Master.");
                         strona_glowna();
                     case 3:
-                        System.out.println("komp3");
-                        System.out.println("kupiles komp3");
+                        System.out.println("Champion");
+                        System.out.println("Kupiłeś komputer Champion.");
                         strona_glowna();
 
                 }
@@ -163,7 +164,7 @@ public class Main {
 
                 }
             case 7:
-                System.out.println("krzesła");
+                System.out.println("Krzesła");
                 System.out.println("wybierz opcje 1,2 lub 3");
                 opcje = scanner.nextInt();
                 switch(opcje){
@@ -285,7 +286,7 @@ public class Main {
  *Funkcja promocje : Informuje klienta na jakie przedmioty i ile zniżki jest na promocji.
  *Funkcja sprzedaz : Umożliwia zakupu wybranego przedmiotu przez klienta przy odpowoedniej ilosci pieniedzy doładowaniu konta.
  *Funkcja black_friday : Informuje klienta o promocji tak zwanej w czarny piątek odbywającej się w dniu 26.11.2021 na większość
-  przedmiotów w sklepie.
+ przedmiotów w sklepie.
  *Funkcja rekomendowane_produkty : Wyświetla polecane produkty klientom.
  * @autorzy
  *Norbert Modzeleski, Dominik Krucha
