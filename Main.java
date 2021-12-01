@@ -11,7 +11,7 @@ public class Main {
         int opcje;
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Witamy w sklepie gamingowym");
+        System.out.println("Witamy w naszym sklepie Gaming Room!");
         System.out.println("1. Promocje");
         System.out.println("2. Sprzedaż ");
         System.out.println("3. Black Friday");
@@ -35,7 +35,7 @@ public class Main {
         System.out.println("Promocje do -70%");
         System.out.println("Promocje sprzetu komputerowego");
         System.out.println("Promocje krzeseł i biurek");
-        System.out.println("promocje ledów");
+        System.out.println("Promocje na światła led");
         strona_glowna();
     }
     public static void sprzedaz(){
@@ -89,7 +89,7 @@ public class Main {
                 }
             case 3:
                 System.out.println("klawiatury");
-                System.out.println("wybierz opcje 1,2 lub 3");
+                System.out.println("Wybierz klwaiature która chcesz kupić 1,2 lub 3");
                 opcje = scanner.nextInt();
                 switch(opcje){
                     case 1:
