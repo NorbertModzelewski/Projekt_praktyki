@@ -25,7 +25,7 @@ public class Main {
                     Person.rejestracja();
                     break;
                 default:
-                    System.out.println("wybierz liczbe z przedziału od 1 do 2");
+                    System.out.println("Wybierz liczbe z przedziału od 1 do 2!");
                     login();
 
             }
@@ -43,7 +43,7 @@ public class Main {
 
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Witamy w sklepie gamingowym");
+        System.out.println("Witamy w naszym sklepie gamingowym Gaming Room");
         System.out.println("1. Promocje");
         System.out.println("2. Sprzedaż ");
         System.out.println("3. Black Friday");
@@ -66,11 +66,11 @@ public class Main {
             case 5:
                 break;
             default:
-                System.out.println("wybierz liczbe z przedziału od 1 do 5");
+                System.out.println("Wybierz liczbe z przedziału od 1 do 5!");
                 strona_glowna();
         }
         }catch (InputMismatchException e){
-            System.out.println("Wprowadziłeś zły znak");
+            System.out.println("Wprowadziłeś zły znak!");
             strona_glowna();
         }
     }
@@ -79,17 +79,21 @@ public class Main {
         System.out.println("Promocje do -70%");
         System.out.println("Promocje sprzetu komputerowego");
         System.out.println("Promocje krzeseł i biurek");
-        System.out.println("promocje ledów");
+        System.out.println("Promocje świateł led");
         strona_glowna();
     }
     public static void sprzedaz(){
 
         int opcje;
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Sprzedaż komputerów: opcja 1");
-        System.out.println("Sprzedaż osprzetu komputerowego: opcja 2,3,4,5");
-        System.out.println("Sprzedaż psc: opcja 6");
-        System.out.println("Produkty krzesła, przedaż umeblowania gamingowego: opcja 7,8");
+        System.out.println("1. Sprzedaż komputerów");
+        System.out.println("2. Sprzedaż myszek");
+		System.out.println("3. Sprzedaż klawiatur");
+		System.out.println("4. Sprzedaż podstawek");
+		System.out.println("5. Sprzedaż monitorów");
+        System.out.println("6. Sprzedaż PaySafeCard");
+        System.out.println("7. Sprzedaż krzeseł");
+		System.out.println("8. Sprzedaż biurek");
         opcje = scanner.nextInt();
         try{
 
@@ -120,155 +124,155 @@ public class Main {
                 }
 
             case 2:
-                System.out.println("myszki");
-                System.out.println("wybierz opcje 1,2 lub 3");
+                System.out.println("Myszki");
+                System.out.println("Wybierz która myszke chcesz kupić 1.Razer Viper 2.Endgame Gear XM1 3.Corsair Sabre RGB Pro");
                 opcje = scanner.nextInt();
                 switch(opcje){
                     case 1:
-                        System.out.println("myszka1");
-                        System.out.println("kupiles myszke1");
+                        System.out.println("Razer Viper");
+                        System.out.println("Kupiłeś myszke Razer Viper.");
                         sprzedaz();
                         break;
                     case 2:
-                        System.out.println("myszka2");
-                        System.out.println("kupiles myszke2");
+                        System.out.println("Endgame Gear XM1");
+                        System.out.println("Kupiłeś myszke Endgame Gear XM1.");
                         sprzedaz();
                         break;
                     case 3:
-                        System.out.println("myszka3");
-                        System.out.println("kupiles myszke3");
+                        System.out.println("Corsair Sabre RGB Pro");
+                        System.out.println("Kupiłeś myszke Corsair Sabre RGB Pro.");
                         sprzedaz();
                         break;
 
                 }
             case 3:
-                System.out.println("klawiatury");
-                System.out.println("wybierz opcje 1,2 lub 3");
+                System.out.println("Klawiatury");
+                System.out.println("Wybierz klawiature która chcesz kupić 1.Asus ROG Strix Scope 2.Cherry G80-3000 3.Corsair Gaming K95 RGB");
                 opcje = scanner.nextInt();
                 switch(opcje){
                     case 1:
-                        System.out.println("klawiatura1");
-                        System.out.println("kupiles klawiature1");
+                        System.out.println("Asus ROG Strix Scope");
+                        System.out.println("Kupiłeś klawiature Asus ROG Strix Scope.");
                         sprzedaz();
                         break;
                     case 2:
-                        System.out.println("klawiatura2");
-                        System.out.println("kupiles klawiature2");
+                        System.out.println("Cherry G80-3000");
+                        System.out.println("Kupiłeś klawiature Cherry G80-3000.");
                         sprzedaz();
                         break;
                     case 3:
-                        System.out.println("klawiatura3");
-                        System.out.println("kupiles klawiature3");
+                        System.out.println("Corsair Gaming K95 RGB");
+                        System.out.println("Kupiłeś klawiature Corsair Gaming K95 RGB.");
                         sprzedaz();
                         break;
 
                 }
             case 4:
-                System.out.println("podstawki");
-                System.out.println("wybierz opcje 1,2 lub 3");
+                System.out.println("Podstawki do myszek");
+                System.out.println("Wybierz podstawke do myszek która chcesz kupić 1.X 2.Y 3.Z");
                 opcje = scanner.nextInt();
                 switch(opcje){
                     case 1:
-                        System.out.println("podstawka1");
-                        System.out.println("kupiles podstwke1");
+                        System.out.println("X");
+                        System.out.println("Kupiłeś podstawke X.");
                         sprzedaz();
                         break;
                     case 2:
-                        System.out.println("podstwaka2");
-                        System.out.println("kupiles podstwke2");
+                        System.out.println("Y");
+                        System.out.println("Kupiłeś podstwke Y.");
                         sprzedaz();
                         break;
                     case 3:
-                        System.out.println("podstawka3");
-                        System.out.println("kupiles podstwke3");
+                        System.out.println("Z");
+                        System.out.println("Kupiłeś podstawke Z.");
                         sprzedaz();
                         break;
 
                 }
             case 5:
-                System.out.println("monitory");
-                System.out.println("wybierz opcje 1,2 lub 3");
+                System.out.println("Monitory gamingowe");
+                System.out.println("Wybierz monitor który chciałbyś kupić 1.ASUS VG248QG 2.Iiyama ProLite XUB2796QSU-B1 3. ");
                 opcje = scanner.nextInt();
                 switch(opcje){
                     case 1:
-                        System.out.println("monitor1");
-                        System.out.println("kupiles monitor1");
+                        System.out.println("ASUS VG248QG");
+                        System.out.println("Kupiłeś monitor ASUS VG248QG.");
                         sprzedaz();
                         break;
                     case 2:
-                        System.out.println("monitor2");
-                        System.out.println("kupiles monitor2");
+                        System.out.println("Iiyama ProLite XUB2796QSU-B1");
+                        System.out.println("Kupiłeś monitor Iiyama ProLite XUB2796QSU-B1.");
                         sprzedaz();
                         break;
                     case 3:
-                        System.out.println("monitor3");
-                        System.out.println("kupiles monitor3");
+                        System.out.println("LG 27GN880 Ergo ");
+                        System.out.println("Kupiłeś monitor LG 27GN880 Ergo.");
                         sprzedaz();
                         break;
 
                 }
             case 6:
-                System.out.println("doładowania");
-                System.out.println("wybierz opcje 1,2 lub 3");
+                System.out.println("Doładowania PaySafeCard");
+                System.out.println("Wybierz doładowanie PSC które chcesz kupić 1.20zł 2.50zł 3.100zł");
                 opcje = scanner.nextInt();
                 switch(opcje){
                     case 1:
-                        System.out.println("doładowanie1");
-                        System.out.println("kupiles doładowanie1");
+                        System.out.println("PSC 20zł");
+                        System.out.println("Kupiłeś PSC za 20zł.");
                         sprzedaz();
                         break;
                     case 2:
-                        System.out.println("doładowanie2");
-                        System.out.println("kupiles doładowanie2");
+                        System.out.println("PSC 50zł");
+                        System.out.println("Kupiłeś PSC za 50zł.");
                         sprzedaz();
                         break;
                     case 3:
-                        System.out.println("doładowanie3");
-                        System.out.println("kupiles doładowanie3");
+                        System.out.println("PSC 100zł");
+                        System.out.println("Kupiłeś PSC za 100zł.");
                         sprzedaz();
                         break;
 
                 }
             case 7:
                 System.out.println("Krzesła");
-                System.out.println("wybierz opcje 1,2 lub 3");
+                System.out.println("Wybierz krzesło które chcesz kupić 1.Diablo Chairs X-ONE 2.MAD DOG GCH700 3.Kraken ");
                 opcje = scanner.nextInt();
                 switch(opcje){
                     case 1:
-                        System.out.println("krzesło1");
-                        System.out.println("kupiles krzeslo1");
+                        System.out.println("Diablo Chairs X-ONE");
+                        System.out.println("Kupiłeś krzesło Diablo Chairs X-ONE.");
                         sprzedaz();
                         break;
                     case 2:
-                        System.out.println("krzesło2");
-                        System.out.println("kupiles krzeslo2");
+                        System.out.println("MAD DOG GCH700");
+                        System.out.println("Kupiłeś krzesło MAD DOG GCH700.");
                         sprzedaz();
                         break;
                     case 3:
-                        System.out.println("krzesło3");
-                        System.out.println("kupiles krzeslo3");
+                        System.out.println("Kraken");
+                        System.out.println("Kupiłeś krzesło Kraken.");
                         sprzedaz();
                         break;
 
                 }
             case 8:
-                System.out.println("biurka");
-                System.out.println("wybierz opcje 1,2 lub 3");
+                System.out.println("Biurka gamingowe");
+                System.out.println("Wybierz biurko które chcesz kupić 1.Ultradesk SPACE XXL 2.‎Silver Monkey 3.Huzaro Hero 5.0 White");
                 opcje = scanner.nextInt();
                 switch(opcje){
                     case 1:
-                        System.out.println("biurko1");
-                        System.out.println("kupiles biurko1");
+                        System.out.println("Ultradesk SPACE XXL");
+                        System.out.println("Kupiłeś biurko Ultradesk SPACE XXL.");
                         sprzedaz();
                         break;
                     case 2:
-                        System.out.println("biurko2");
-                        System.out.println("kupiles biurko2");
+                        System.out.println("‎Silver Monkey");
+                        System.out.println("Kupiłeś biurko ‎Silver Monkey.");
                         sprzedaz();
                         break;
                     case 3:
-                        System.out.println("biurko3");
-                        System.out.println("kupiles biurko3");
+                        System.out.println("Huzaro Hero 5.0 White");
+                        System.out.println("Kupiłeś biurko Huzaro Hero 5.0 White.");
                         sprzedaz();
                         break;
 
@@ -291,84 +295,84 @@ public class Main {
     public static void rekomendowane_produkty() {
         int opcje;
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Najbardziej rekomendowanwe produkty w naszym sklepie");
-        System.out.println("wybierz opcje 1,2 lub 3");
+        System.out.println("Rekomendowane produkty w naszym sklepie.");
+        System.out.println("1.Myszki 2.Komputery 3.Krzesła");
         opcje = scanner.nextInt();
         try {
             switch (opcje) {
                 case 1:
-                    System.out.println("myszki");
-                    System.out.println("wybierz opcje 1,2 lub 3");
+                    System.out.println("Myszki");
+                    System.out.println("Wybierz myszke która chcesz kupić 1.Myszka Genesis 2.Myszka SteelSeries 3.Myszka Logitech");
                     opcje = scanner.nextInt();
                     switch (opcje) {
                         case 1:
-                            System.out.println("myszka genesis");
-                            System.out.println("kupiles myszke genesis");
+                            System.out.println("Myszka Genesis");
+                            System.out.println("Kupiłeś myszke Genesis.");
                             rekomendowane_produkty();
                             break;
                         case 2:
-                            System.out.println("myszka steelseries");
-                            System.out.println("kupiles myszke steelseries");
+                            System.out.println("Myszka SteelSeries");
+                            System.out.println("Kupiłeś myszke SteelSeries.");
                             rekomendowane_produkty();
                             break;
                         case 3:
-                            System.out.println("myszka logitech");
-                            System.out.println("kupiles myszke logitech");
+                            System.out.println("Myszka Logitech");
+                            System.out.println("Kupiłeś myszke Myszka Logitech");
                             rekomendowane_produkty();
                             break;
 
                     }
 
                 case 2:
-                    System.out.println("komputery");
-                    System.out.println("wybierz opcje 1,2 lub 3");
+                    System.out.println("Komputery");
+                    System.out.println("Wybierz komputer który chcesz kupić 1.Asus 2.Lenovo 3.Dell");
                     opcje = scanner.nextInt();
                     switch (opcje) {
                         case 1:
-                            System.out.println("komputer asus");
-                            System.out.println("kupiles komputer asus");
+                            System.out.println("Komputer ASUS");
+                            System.out.println("Kupiłeś komputer ASUS.");
                             rekomendowane_produkty();
                             break;
                         case 2:
-                            System.out.println("komputer lenovo");
-                            System.out.println("kupiles komputer lenovo");
+                            System.out.println("Komputer Lenovo");
+                            System.out.println("Kupiłeś komputer Lenovo.");
                             rekomendowane_produkty();
                             break;
                         case 3:
-                            System.out.println("komputer dell");
-                            System.out.println("kupiles komputer dell");
+                            System.out.println("Komputer Dell.");
+                            System.out.println("Kupiłeś komputer Dell.");
                             rekomendowane_produkty();
                             break;
 
                     }
                 case 3:
-                    System.out.println("krzesła");
-                    System.out.println("wybierz opcje 1,2 lub 3");
+                    System.out.println("Krzesła");
+                    System.out.println("Wybierz krzesło które chcesz kupić 1.Diablo 2.Gamvis 3.Huzaro");
                     opcje = scanner.nextInt();
                     switch (opcje) {
                         case 1:
-                            System.out.println("krzesło diablo");
-                            System.out.println("kupiles krzesło diablo");
+                            System.out.println("Krzesło Diablo");
+                            System.out.println("Kupiłeś krzesło Diablo.");
                             rekomendowane_produkty();
                             break;
                         case 2:
-                            System.out.println("krzesło gamvis");
-                            System.out.println("kupiles krzesło gamvis");
+                            System.out.println("Krzesło Gamvis");
+                            System.out.println("Kupiłeś krzesło Gamvis.");
                             rekomendowane_produkty();
                             break;
                         case 3:
-                            System.out.println("krzesło huzaro");
-                            System.out.println("kupiles krzesło huzaro");
+                            System.out.println("Krzesło Huzaro.");
+                            System.out.println("Kupiłeś krzesło Huzaro.");
                             rekomendowane_produkty();
                             break;
 
                     }
                 default:
-                    System.out.println("wybierz liczbe z przedziału od 1 do 3");
+                    System.out.println("Wybierz liczbe z przedziału od 1 do 3!");
                     rekomendowane_produkty();
             }
         }catch (InputMismatchException e){
-            System.out.println("Wprowadziłeś zły znak ");
+            System.out.println("Wprowadziłeś zły znak!");
             rekomendowane_produkty();
         }
             rekomendowane_produkty();
