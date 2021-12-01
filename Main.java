@@ -271,9 +271,11 @@ public class Main {
                         System.out.println("kupiles biurko3");
                         sprzedaz();
                         break;
-                    default:
-                        System.out.println("wybierz liczbe z przedziału od 1 do 8");
+
                 }
+            default:
+                System.out.println("wybierz liczbe z przedziału od 1 do 8");
+                sprzedaz();
         }
         }catch(InputMismatchException e){
             System.out.println("Wprowadziłeś zły znak ");
@@ -359,10 +361,11 @@ public class Main {
                             System.out.println("kupiles krzesło huzaro");
                             rekomendowane_produkty();
                             break;
-                        default:
-                            System.out.println("wybierz liczbe z przedziału od 1 do 3");
-                            rekomendowane_produkty();
+
                     }
+                default:
+                    System.out.println("wybierz liczbe z przedziału od 1 do 3");
+                    rekomendowane_produkty();
             }
         }catch (InputMismatchException e){
             System.out.println("Wprowadziłeś zły znak ");
