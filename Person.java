@@ -1,10 +1,9 @@
 import java.util.Scanner;
 
-public class Person {
+public class Person extends Klienci {
     private String imie;
     private String nazwisko;
     private int wiek;
-    private String haslo;
 
 
     public void setImie(String newImie) {
@@ -17,10 +16,6 @@ public class Person {
 
     public void setWiek(int newWiek){
         this.wiek = newWiek;
-    }
-
-    public void setHaslo(String newHaslo){
-        this.haslo = newHaslo;
     }
 
     public static void rejestracja() {
