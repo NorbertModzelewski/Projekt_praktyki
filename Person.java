@@ -24,15 +24,15 @@ public class Person extends Klienci {
 
         System.out.println("Wprowadź imie");
         myObj.setImie(scanner.next());
-        System.out.println("Twoj imie: "+ myObj.imie);
+
 
         System.out.println("Wprowadź nazwisko");
         myObj.setNazwisko(scanner.next());
-        System.out.println("Twoje nazwisko: "+ myObj.nazwisko);
+
 
         System.out.println("Wprowadź wiek:");
         myObj.setWiek(scanner.nextInt());
-        System.out.println("Twoje wiek: "+ myObj.wiek);
+
 
         System.out.println("Wprowadź hasło:");
         myObj.setHaslo(scanner.next());
