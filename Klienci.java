@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Klienci extends Person {
+public class Klienci {
     private String email;
     private String haslo;
 
