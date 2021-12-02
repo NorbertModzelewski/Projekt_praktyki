@@ -1,10 +1,27 @@
-public class Klienci extends Person{
+import java.util.Scanner;
+public class Klienci {
     private String email;
     private String haslo;
 
-    public Klienci(String imie, String nazwisko, int wiek, String adres, int kod_pocztowy, String email, String haslo) {
-        super(imie, nazwisko, wiek, adres, kod_pocztowy);
-        this.email = email;
-        this.haslo = haslo;
+    public void setEmail(String newEmail) {
+
+        this.email = newEmail;
+    }
+
+    public void setHaslo(String newHaslo) {
+        this.haslo = newHaslo;
+    }
+
+
+    public static void logowanie() {
+        Klienci myObj = new Klienci();
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Wprowadź email");
+        myObj.setEmail(scanner.next());
+
+        System.out.println("Wprowadź haslo:");
+        myObj.setHaslo(scanner.next());
+        System.out.println("Pomyślnie zalogowano użytkownika "+myObj.email);
     }
 }
