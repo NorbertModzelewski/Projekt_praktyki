@@ -4,6 +4,7 @@ public class Klienci {
     private String haslo;
 
     public void setEmail(String newEmail) {
+
         this.email = newEmail;
     }
 
@@ -18,11 +19,9 @@ public class Klienci {
 
         System.out.println("Wprowadź email");
         myObj.setEmail(scanner.next());
-        System.out.println("Twoj email: "+ myObj.email);
 
         System.out.println("Wprowadź haslo:");
         myObj.setHaslo(scanner.next());
-        System.out.println("Twoje hasło: "+ myObj.haslo);
-
+        System.out.println("Pomyślnie zalogowano użytkownika "+myObj.email);
     }
 }
